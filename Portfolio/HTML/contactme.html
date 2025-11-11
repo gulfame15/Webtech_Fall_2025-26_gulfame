@@ -1,41 +1,38 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
 
-    </head>
+    
+    <link rel="stylesheet" href="/Portfolio/CSS/style.css">
+</head>
 
-    <body>
-        <h3> Contact Me</h3>
-        <form method="GET">
-            First Name: <input type="text" name="first name" required><br>
-            Last Name : <input type="text" name="first name" required><br>   
-            Email : <input type="email" required><br>
-             Company name  :<input type="text" name="company Name"><br>
-             Reason for contact :<br>
-             <input type="radio" name="reason" required>Project<br>
-             <input type="radio" name="reason" >Thesis<br>
-             <input type="radio" name="reason" >Job<br>
-             Services Provided:<br>
-             <input type="checkbox" name="Service"required>Programming<br>
-             <input type="checkbox" name="Service" required>Hacking<br>
-             <input type="checkbox" name="Service"required>Research<br>
-             <input type="checkbox" name="Service"required>hosting<br>
-             Book an Appointment:<br>
-             <input type="date" id="date" name="date" required><br><br>
+<body>
+    <h3>Contact Me</h3>
+    <form method="GET">
+        First Name: <input type="text" name="first_name" required><br>
+        Last Name: <input type="text" name="last_name" required><br>   
+        Email: <input type="email" name="email" required><br>
+        Company Name: <input type="text" name="company_name"><br>
 
-             <input type="submit" value="Book now">
-             <input type="reset" value="reset">
+        Reason for contact:<br>
+        <input type="radio" name="reason" value="project" required> Project<br>
+        <input type="radio" name="reason" value="thesis"> Thesis<br>
+        <input type="radio" name="reason" value="job"> Job<br>
 
+        Services Provided:<br>
+        <input type="checkbox" name="service" value="programming"> Programming<br>
+        <input type="checkbox" name="service" value="hacking"> Hacking<br>
+        <input type="checkbox" name="service" value="research"> Research<br>
+        <input type="checkbox" name="service" value="hosting"> Hosting<br>
 
+        Book an Appointment:<br>
+        <input type="date" id="date" name="date" required><br><br>
 
-
-
-
-
-
-
-
-             
-          </form>
-    </body>
+        <input type="submit" value="Book now">
+        <input type="reset" value="Reset">
+    </form>
+</body>
 </html>
-
