@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-
-    
-    <link rel="stylesheet" href="/Portfolio/CSS/style.css">
+  <meta charset="UTF-8">
+  <title>Contact me</title>
+  <link rel="stylesheet" href="../CSS/contact.css">
 </head>
-
+ 
 <body>
-    <h3>Contact Me</h3>
-    <form method="GET">
-        First Name: <input type="text" name="first_name" required><br>
-        Last Name: <input type="text" name="last_name" required><br>   
-        Email: <input type="email" name="email" required><br>
-        Company Name: <input type="text" name="company_name"><br>
-
-        Reason for contact:<br>
-        <input type="radio" name="reason" value="project" required> Project<br>
-        <input type="radio" name="reason" value="thesis"> Thesis<br>
-        <input type="radio" name="reason" value="job"> Job<br>
-
-        Services Provided:<br>
-        <input type="checkbox" name="service" value="programming"> Programming<br>
-        <input type="checkbox" name="service" value="hacking"> Hacking<br>
-        <input type="checkbox" name="service" value="research"> Research<br>
-        <input type="checkbox" name="service" value="hosting"> Hosting<br>
-
-        Book an Appointment:<br>
-        <input type="date" id="date" name="date" required><br><br>
-
-        <input type="submit" value="Book now">
-        <input type="reset" value="Reset">
-    </form>
+ 
+  <form method="GET">
+ 
+    <div class="row">
+      <div class="label">First Name :</div>
+      <input type="text" name="firstname" required>
+    </div>
+ 
+    <div class="row">
+      <div class="label">Last Name :</div>
+      <input type="text" name="lastname" required>
+    </div>
+ 
+    <div class="row">
+      <div class="label">Email :</div>
+      <input type="email" name="email" required>
+    </div>
+ 
+    <div class="row">
+      <div class="label">Company (optional) :</div>
+      <input type="text" name="company">
+    </div>
+ 
+    <div class="row">
+      <div class="label">Reason for Contact :</div>
+      <div>
+        <input type="radio" name="reason" value="Project" required> Project<br>
+        <input type="radio" name="reason" value="Thesis"> Thesis<br>
+        <input type="radio" name="reason" value="Job"> Job
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="label">Services You Provide :</div>
+      <div>
+        <input type="checkbox" name="service" value="Web Design" required> Web Design<br>
+        <input type="checkbox" name="service" value="App Development"> App Development<br>
+        <input type="checkbox" name="service" value="Consulting"> Consulting
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="label">Appointment Date :</div>
+      <input type="date" name="appointment_date" required>
+    </div>
+ 
+    <div class="center-buttons">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+ 
+  </form>
+ 
 </body>
 </html>
+ 
+ 
